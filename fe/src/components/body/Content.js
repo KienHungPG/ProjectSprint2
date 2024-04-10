@@ -44,14 +44,14 @@ export function Content() {
       setType("null")
       getAllProductsNew()
     } else if (type == 1) {
-      setType("Đồng hồ nam")
-      getAllProductsNew("Đồng hồ nam")
+      setType("MEN'S WATCH")
+      getAllProductsNew("MEN'S WATCH")
     } else if (type == 2) {
-      setType("Đồng hồ nữ")
-      getAllProductsNew("Đồng hồ nữ")
+      setType("WOMEN'S WATCHES")
+      getAllProductsNew("WOMEN'S WATCHES")
     } else if (type == 3) {
-      setType("Đồng hồ unisex")
-      getAllProductsNew("Đồng hồ unisex")
+      setType("UNISEX WATCHES")
+      getAllProductsNew("UNISEX WATCHES")
     }
 
   }
@@ -86,9 +86,9 @@ export function Content() {
                  {/* <h2>Featured Products</h2>
               <p>Choose your favorite cool sourcem</p> */}
                   <li onClick={() => onclickType(0)}>All</li>
-                  <li onClick={() => onclickType(1)}>Đồng hồ nam</li>
-                  <li onClick={() => onclickType(2)}>Đồng hồ nữ</li>
-                  <li onClick={() => onclickType(3)}>Đồng hồ unisex</li>
+                  <li onClick={() => onclickType(1)}>MEN'S WATCH</li>
+                  <li onClick={() => onclickType(2)}>WOMEN'S WATCHES</li>
+                  <li onClick={() => onclickType(3)}>UNISEX WATCHES</li>
                 </ul>
               </div>
             </div>

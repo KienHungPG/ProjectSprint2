@@ -1,8 +1,17 @@
 export function ErrorAll() {
-    return (
-        <>
-        <h3 style={{marginTop:"20%",marginBottom:"20%",marginLeft:"30%",color:"red"}}>This page currently has no information! Please come back.</h3>
-        
-        </>
-    )
+  return (
+    <>
+      <div id="notfound">
+        <div className="notfound">
+          <div className="notfound-404" />
+          <h1>404</h1>
+          <h2>Oops! Page Not Be Found</h2>
+          <p>
+            Sorry but the page you are looking for does not exist, have been
+            removed. name changed or is temporarily unavailable
+          </p>
+        </div>
+      </div>
+    </>
+  );
 }
