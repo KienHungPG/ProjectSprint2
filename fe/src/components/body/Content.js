@@ -1,7 +1,3 @@
-import ElectricRickshawIcon from '@mui/icons-material/ElectricRickshaw';
-import WifiCalling3Icon from '@mui/icons-material/WifiCalling3';
-import ReplayIcon from '@mui/icons-material/Replay';
-import SettingsIcon from '@mui/icons-material/Settings';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import * as service from '../service/Service';
@@ -71,20 +67,6 @@ export function Content() {
             <div className="row" data-aos="fade-up" data-aos-delay={200}>
               <div className="col-lg-12 d-flex justify-content-center">
                 <ul id="portfolio-flters">
-                  {/* <li data-filter="*" className="filter-app">
-                    <NavLink to="/#all" style={({isActive}) => {
-                      return{
-                        backgroundColor : isActive? "#3498db":"",
-                        color : isActive? "white" :""
-                      }
-                    }}>All</NavLink>
-                    
-                  </li>
-                  <li data-filter=".filter-app">Steam fan</li>
-                  <li data-filter=".filter-card">Standing fan</li>
-                  <li data-filter=".filter-web">Wall fan</li> */}
-                 {/* <h2>Featured Products</h2>
-              <p>Choose your favorite cool sourcem</p> */}
                   <li onClick={() => onclickType(0)}>All</li>
                   <li onClick={() => onclickType(1)}>MEN'S WATCH</li>
                   <li onClick={() => onclickType(2)}>WOMEN'S WATCHES</li>
