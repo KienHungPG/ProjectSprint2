@@ -9,6 +9,18 @@ export function Content() {
   const [page, setPage] = useState(0);
   const [totalPage, setTotalPage] = useState();
   const [type, setType] = useState("null");
+  // const [searchName, setSearchName] = useState("");
+
+  // const handleSearch = (value) => {
+  //   setSearchName(value);
+  // }
+
+
+  // const submitSearch = async (searchName, type, page) => {
+  //   let rs = await service.getAllProduct(searchName, type, page);
+  //   setProductList(rs.data.content);
+  // }
+
   const getAllProducts = async (type = 'null', page = 0) => {
     try {
       const rs = await service.getAllProduct(type, page)
@@ -55,6 +67,13 @@ export function Content() {
     document.title = "Home";
     getAllProducts();
   }, [])
+
+if(productList.length == 0){
+  return(
+    <div>Loading</div>
+  )
+}
+
   return (
     <>
       <main id="main" className='container'>
@@ -65,6 +84,12 @@ export function Content() {
               <p>Choose your favorite products</p>
             </div>
             <div className="row" data-aos="fade-up" data-aos-delay={200}>
+              {/* <div className='row d-flex'>
+              <input onChange={(event) => handleSearch(event.target.value)} type="text" />
+              <button onClick={() => submitSearch()} type="button" className="btn btn-in-list">Tìm
+                                    kiếm
+                                </button>
+              </div> */}
               <div className="col-lg-12 d-flex justify-content-center">
                 <ul id="portfolio-flters">
                   <li onClick={() => onclickType(0)}>All</li>
