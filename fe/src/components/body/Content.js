@@ -55,8 +55,8 @@ export function Content() {
       setType("MEN'S WATCH")
       getAllProductsNew("MEN'S WATCH")
     } else if (type == 2) {
-      setType("WOMEN'S WATCHES")
-      getAllProductsNew("WOMEN'S WATCHES")
+      setType("WOMAN'S WATCHES")
+      getAllProductsNew("WOMAN'S WATCHES")
     } else if (type == 3) {
       setType("UNISEX WATCHES")
       getAllProductsNew("UNISEX WATCHES")
